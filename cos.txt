@@ -1,0 +1,20 @@
+a = int(input("Podaj a: "))
+b = int(input("Podaj b: "))
+c = int(input("Podaj c: "))
+
+x = a + b
+y = a + c
+z = b + c
+
+if x < y:
+    x, y = y, x
+
+if x < z:
+    x, z = z, x
+
+if y < z:
+    y, z = z, y
+
+print(x)
+print(y)
+print(z)
